@@ -42,7 +42,7 @@ header h1 span {
   max-width: 450px;
   position: fixed;
   top: 0;
-  right: -450px;
+  right: -450px; /*hidden by default */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
