@@ -1,16 +1,22 @@
 :root {
-  --primary: rgb(72, 61, 139);
-  --second: rgb(205, 92, 92);
-  --third: rgb(240, 248, 255);
+  --primary: #cad2c5;
+  --second: #2f3e46;
+  --third: #84a98c;
+  --fourth: #354f52;
+  --fifth: #52796f;
 }
 
 /* mobile first default styling */
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Fredoka", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  background-color: rgb(72, 61, 139);
+  background-color: whitesmoke;
   color: aliceblue;
   margin: 0;
   padding: 0;
@@ -22,21 +28,24 @@ header {
   display: flex;
   justify-content: space-between;
   /* padding: 20px; */
-  background-color: rgb(205, 92, 92);
+  background-color: var(--fifth);
 }
 
 header h1 {
   margin-left: 5px;
+  color: var(--second);
+  text-shadow: 2px 2px 2px var(--third);
 }
 
 header h1 span {
-  color: rgb(72, 61, 139);
+  color: var(--primary);
+  text-shadow: 2px 2px 0px var(--second);
 }
 
 /* offscreen menu edits */
 
 .off-screen-menu {
-  background-color: black;
+  background-color: var(--second);
   height: 50vh;
   width: 100%;
   max-width: 450px;
@@ -51,6 +60,7 @@ header h1 span {
   font-size: 3rem;
   transition: right 0.6s ease;
   border-radius: 0 0 12% 12%;
+  z-index: 1000; /*so h1 next to image does appear on top*/
 }
 
 .off-screen-menu ul {
@@ -86,7 +96,8 @@ nav {
 .ham-menu span {
   height: 8px;
   width: 100%;
-  background-color: rgb(72, 61, 139);
+  background-color: var(--primary);
+  border: 2px smooth var(--primary);
   border-radius: 25px;
   position: absolute;
   top: 50%;
@@ -106,7 +117,7 @@ nav {
 .ham-menu.active span:nth-child(1) {
   top: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
-  background-color: var(--second);
+  background-color: var(--third);
 }
 
 /* hide one span while active */
@@ -118,4 +129,182 @@ nav {
 .ham-menu.active span:nth-child(3) {
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* profile hero edits */
+
+/* hero main container edits */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80vh;
+  background-color: var(--primary);
+  text-align: center;
+  padding-top: 50px;
+  /* border: 2px black solid; */
+}
+
+/* profile hero image and heading side by side */
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px black solid; */
+}
+
+.profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 10px;
+  border: 3px groove var(--second);
+}
+
+.profile img {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* profile pic hover effect */
+
+.profile img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 10px 20px var(--second); /* Add shadow effect */
+}
+
+/* some hero text */
+.hero-content h2 {
+  color: var(--third);
+  text-shadow: 2px 2px 2px black;
+  font-size: 1.8rem;
+}
+
+/* keyframes for h2 next to image */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content h2 {
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* hero paragraph (not in hero-conteent div but in hero container section*/
+.hero-container p {
+  color: var(--second);
+  margin-top: 20px;
+  font-size: larger;
+}
+
+/* social icons link/github */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 200px;
+  /* border: 1px solid green; */
+}
+
+.social-icons a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.cta {
+  margin-top: 50px;
+}
+
+.cta .btn {
+  display: inline-block;
+  background: linear-gradient(
+    135deg,
+    var(--second),
+    var(--third)
+  ); /* Gradient */
+  text-shadow: 2px 2px 2px var(--second);
+  color: var(--primary);
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 5px var(--fourth); /* Subtle shadow */
+  position: relative;
+  overflow: hidden;
+}
+
+.cta .btn:hover {
+  background: linear-gradient(
+    135deg,
+    #2f3e46,
+    #354f52
+  ); /* Color change on hover */
+  box-shadow: 0 6px 20px var(--second); /* Bigger shadow on hover */
+  transform: translateY(-3px); /* Lift effect */
+}
+
+/* Addin a subtle effect that follows the mouse hover */
+.cta .btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  transition: all 0.75s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  pointer-events: none;
+}
+
+.cta .btn:hover::before {
+  transform: translate(-50%, -50%) scale(3);
+}
+
+/*about me section edits  */
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* height: 100vh; */
+  width: auto;
+  background-color: #354f52;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: var(--primary);
+  font-size: large;
+}
+
+.about-me img {
+  height: auto;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 10px 20px var(--fourth);
+  transform: 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* same pic hover effect as above */
+
+.about-me img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 10px 20px var(--second); /* Add shadow effect */
+}
+.about-me p {
+  padding: 20px;
 }
