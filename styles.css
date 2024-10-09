@@ -22,6 +22,10 @@ body {
   padding: 0;
 }
 
+main {
+  background-color: var(--primary);
+}
+
 /* header edits */
 
 header {
@@ -347,7 +351,12 @@ nav {
 
 .skills {
   width: 100%;
-
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 50px auto;
   padding: 20px;
   background-color: var(--primary);
   text-align: center;
@@ -403,8 +412,8 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* gap: 20px; */
-  padding-top: 50px;
+  font-size: large;
+  padding: 50px;
   background-color: var(--fourth);
 }
 
@@ -419,8 +428,8 @@ nav {
 }
 
 .project .card {
-  height: 200px;
-  width: 300px;
+  min-height: 300px;
+  min-width: 400px;
   border-radius: 10%;
   margin: 0 auto;
   background-position: center;

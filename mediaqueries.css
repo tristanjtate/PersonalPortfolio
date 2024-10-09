@@ -40,6 +40,38 @@
 }
 
 @media (min-width: 1024px) {
+  /* header edits */
+  header img {
+    height: 70px;
+    width: 70px;
+    overflow: hidden;
+  }
+
+  header {
+    overflow: auto;
+  }
+
+  /* hero section to enlarge */
+
+  .hero-container {
+    min-height: 80vh;
+  }
+  .hero-container img {
+    width: 500px;
+    height: 500px;
+  }
+
+  .hero-container h2 {
+    font-size: 5rem;
+    padding-left: 100px;
+  }
+
+  .hero-container p {
+    font-size: 2rem;
+    width: 900px;
+    text-align: center;
+  }
+
   .about-me img {
     width: 60%;
     max-width: 600px; /* Even larger maximum width */
@@ -47,5 +79,14 @@
 
   .hero-container {
     min-height: 100vh;
+  }
+
+  /* project section edits */
+
+  .project .card {
+    min-height: 400px;
+    min-width: 500px;
+    background-size: contain;
+    margin-bottom: 20px;
   }
 }
