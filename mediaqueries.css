@@ -1,0 +1,51 @@
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .about-me img {
+    width: 80%;
+    max-width: 500px; /* Larger maximum width on bigger screens */
+  }
+  p {
+    max-width: 600px; /*set a max width..prob could of done this on mobile first */
+    margin: 0 auto; /* Center the paragraph */
+    line-height: 1.6; /* Improve readability */
+  }
+
+  /* nav appear  and ham-menu leaves*/
+  .real-nav {
+    display: block;
+  }
+
+  .real-nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+  }
+
+  .real-nav ul a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+  }
+
+  .real-nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* hide ham menu and off screen */
+  .ham-menu,
+  .off-screen-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-me img {
+    width: 60%;
+    max-width: 600px; /* Even larger maximum width */
+  }
+
+  .hero-container {
+    min-height: 100vh;
+  }
+}

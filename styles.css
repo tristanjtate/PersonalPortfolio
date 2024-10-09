@@ -31,7 +31,7 @@ header {
   background-color: var(--fifth);
 }
 
-header h1 {
+/* header h1 {
   margin-left: 5px;
   color: var(--second);
   text-shadow: 2px 2px 2px var(--third);
@@ -40,6 +40,16 @@ header h1 {
 header h1 span {
   color: var(--primary);
   text-shadow: 2px 2px 0px var(--second);
+} */
+
+header img {
+  height: 50px;
+  width: 50px;
+  border-radius: 10%;
+  border: 1px solid var(--second);
+  position: relative;
+  left: 10px;
+  top: 10px;
 }
 
 /* offscreen menu edits */
@@ -96,6 +106,10 @@ header h1 span {
 }
 
 /* nav edits */
+
+.real-nav {
+  display: none;
+}
 
 nav {
   /* border: 1px solid black; */
@@ -157,11 +171,12 @@ nav {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 80vh;
+  min-height: 70vh;
   background-color: var(--primary);
   text-align: center;
   padding-top: 50px;
-  /* border: 2px black solid; */
+  padding-bottom: 100px;
+  box-sizing: border-box;
 }
 
 /* profile hero image and heading side by side */
@@ -312,6 +327,7 @@ nav {
 .about-me img {
   height: auto;
   width: 100%;
+  max-width: 400px;
   border-radius: 50%;
   box-shadow: 0 10px 20px var(--fourth);
   transform: 0.5s ease, box-shadow 0.5s ease;
@@ -379,4 +395,131 @@ nav {
   position: absolute;
   right: 0.5rem;
   color: var(--primary);
+}
+
+/* project section edits */
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 20px; */
+  padding-top: 50px;
+  background-color: var(--fourth);
+}
+
+.project-container h2 {
+  color: var(--primary);
+  padding-bottom: 50px;
+}
+
+.project {
+  text-align: center;
+  position: relative;
+}
+
+.project .card {
+  height: 200px;
+  width: 300px;
+  border-radius: 10%;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px var(--primary);
+}
+
+.card h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the text */
+  color: whitesmoke;
+  font-size: larger;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10%;
+  padding: 10px;
+}
+
+.project p {
+  color: var(--primary);
+  padding: 10px;
+  text-align: left;
+}
+
+/* overlay text edits and hover  */
+h3 a {
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: transparent;
+  transition: transform 0.3s ease-in-out; /* Ensure transition applies here */
+}
+
+h3 a:active,
+h3 {
+  color: gold;
+}
+
+/* project card backround images */
+.card1 {
+  background-image: url(assets/state-project.png);
+}
+
+/* footer/contact */
+
+/* Footer Styling */
+footer {
+  background-color: var(--fifth); /* Footer background */
+  color: var(--primary); /* Text color */
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container h2 {
+  font-size: 1.5rem; /* Slightly larger for mobile */
+  margin-bottom: 10px;
+}
+
+.footer-container .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between icons */
+}
+
+.footer-container .social-icons a img {
+  width: 40px; /* Icon size */
+  height: 40px;
+  border-radius: 50%;
+}
+
+footer nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 1rem;
 }

@@ -30,6 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   skillBars.forEach((bar) => {
     const percentage = bar.getAttribute("data-per");
-    bar.style.width = percentage; // Correctly apply the percentage width
+    bar.style.width = percentage; // apply percent
   });
 });
