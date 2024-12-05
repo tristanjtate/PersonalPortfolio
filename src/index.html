@@ -13,23 +13,33 @@
   </head>
   <body class="font-parkinsans text-customDarkBlue space-y-20">
     <!-- header section with logo, darkmode toggle and nav -->
- <header class="flex justify-between items-center p-4 rounded-sm bg-customLightBlue shadow-lg">
+ <header class="group flex justify-between items-center p-4 rounded-sm bg-customLightBlue shadow-lg px-14">
   <!-- Logo -->
-  <div class="flex items-center">
-    <img src="/assets/letter-t-svgrepo-com.svg" alt="Logo" class="h-10 w-auto fill-customRed" />
+ <div class="relative flex items-center justify-center w-28 h-28 bg-gradient-to-b from-customLightBlue to-customDarkBlue rounded-full shadow-2xl animate-pulse duration-1000 ease-in-out">
+    <span class="absolute text-white text-5xl font-black">T</span>
+    <span class="absolute text-white text-5xl font-black opacity-50 translate-x-3 translate-y-2">T</span>
   </div>
   <!-- Navigation -->
-  <nav class="hidden md:flex space-x-6">
-    <ul class="flex space-x-6">
-      <li class=""><a href="#about">About</a></li>
-      <li class=" "><a href="#projects">Projects</a></li>
-      <li class=" "><a href="#skills">Skills</a></li>
-      <li class=" "><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<nav class="group hidden md:flex space-x-6">
+  <ul class="flex space-x-6 group-hover:space-x-20 group-hover:transition-all duration-1000 text-lg">
+    <li class="group-hover:scale-150 group-hover:w-full transition-all duration-700 hover:scale-140 hover:font-semibold hover:ease-in-out hover:underline">
+      <a href="#about">About</a>
+    </li>
+    <li class="group-hover:scale-150 group-hover:w-full transition-all duration-700 hover:scale-140 hover:font-semibold hover:ease-in-out hover:underline">
+      <a href="#projects">Projects</a>
+    </li>
+    <li class="group-hover:scale-150 group-hover:w-full transition-all duration-700 hover:scale-140 hover:font-semibold hover:ease-in-out hover:underline">
+      <a href="#skills">Skills</a>
+    </li>
+    <li class="group-hover:scale-150 group-hover:w-full transition-all duration-700 hover:scale-140 hover:font-semibold hover:ease-in-out hover:underline">
+      <a href="#contact">Contact</a>
+    </li>
+  </ul>
+</nav>
+
   <!-- Dark Mode Toggle -->
-  <button id="darkModeToggle" class="flex items-center space-x-2">
-    <img src="/assets/moon.svg" alt="Dark mode" class="w-5 h-5 hidden dark:block" />
+  <button id="darkModeToggle" class="flex items-center space-x-2 group">
+    <img src="/assets/moon.svg" alt="Dark mode" class="size-12  group-hover:animate-pulsescale hidden dark:block " />
     <img src="/assets/sun.svg" alt="Light mode" class="w-5 h-5 dark:hidden" />
     <span class="text-sm text-gray-600 ">Toggle</span>
   </button>
