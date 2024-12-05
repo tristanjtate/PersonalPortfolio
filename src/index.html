@@ -4,60 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tristan's Portfolio</title>
-    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="/src/output.css" />
+    <!-- font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
   </head>
-  <body>
+  <body class="font-parkinsans text-customDarkBlue space-y-20">
     <!-- header section with logo, darkmode toggle and nav -->
-    <header>
-      <!-- logo -->
-      <img src="" alt="tristan logo" />
-      <!-- darkmode button-->
-      <button id="darkModeToggle">
-        <!-- moon icon -->
-        <img
-          src="/PersonalPortfolio/assets/moon.svg"
-          alt="sun icon"
-          class="w-5 h-5"
-        />
-        <!-- sun icon -->
-        <img
-          src="/PersonalPortfolio/assets/sun.svg"
-          alt="sun icon"
-          class="w-5 h-5"
-        />
-      </button>
-      <!-- navbar -->
-      <nav>
-        <ul>
-          <a href="#about"><li>About</li></a>
-          <a href="#projects"><li>Projects</li></a>
-          <a href="#skills"><li>Skills</li></a>
-          <a href="#contact"><li>Contact</li></a>
-        </ul>
-      </nav>
-    </header>
+ <header class="flex justify-between items-center p-4 rounded-sm bg-customLightBlue shadow-lg">
+  <!-- Logo -->
+  <div class="flex items-center">
+    <img src="/assets/letter-t-svgrepo-com.svg" alt="Logo" class="h-10 w-auto fill-customRed" />
+  </div>
+  <!-- Navigation -->
+  <nav class="hidden md:flex space-x-6">
+    <ul class="flex space-x-6">
+      <li class=""><a href="#about">About</a></li>
+      <li class=" "><a href="#projects">Projects</a></li>
+      <li class=" "><a href="#skills">Skills</a></li>
+      <li class=" "><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- Dark Mode Toggle -->
+  <button id="darkModeToggle" class="flex items-center space-x-2">
+    <img src="/assets/moon.svg" alt="Dark mode" class="w-5 h-5 hidden dark:block" />
+    <img src="/assets/sun.svg" alt="Light mode" class="w-5 h-5 dark:hidden" />
+    <span class="text-sm text-gray-600 ">Toggle</span>
+  </button>
+</header>
+
+
     <!-- main content -->
-    <main>
+    <main class="flex flex-col items-center justify-center min-h-screen space-y-48 pt-8">
       <!-- hero section -->
-      <section id="hero">
-        <h1>Tristan Tate</h1>
-        <p>Software Engineer</p>
-        <p>Student | Husband & Father | Runner</p>
+      <section id="hero" class="flex px-4 flex-col items-center space-y-10">
+        <h1 class="text-4xl md:text-7xl">Tristan Tate</h1>
+        <p class="text-customRed font-semibold ">Software Engineer</p>
+        <p class="shadow-md px-4">Student <span class="text-customRed font-bold">|</span> Husband & Father <span class="text-customRed font-bold">|</span> Runner</p>
         <!-- social links -->
-        <div>
+        <div class="flex space-x-4">
           <a href="https://github.com/tristanjtate"
             ><img
-              src="/PersonalPortfolio/assets/github.png"
+              src="/assets/github.png"
               alt="github icon"
               class="w-10 h-10"
           /></a>
           <a href="https://github.com/tristanjtate"
             ><img
-              src="/PersonalPortfolio/assets/linkedin.png"
-              alt="github icon"
+              src="/assets/linkedin.png"
+              alt="linkedin icon"
               class="w-10 h-10"
           /></a>
-          <blockquote>
+          </div>
+          <blockquote class="text-pretty text-center">
             <p>
               "Talent is a pursued interest. Anything that you're willing to
               practice, you can do."
@@ -67,53 +68,108 @@
         </div>
       </section>
       <!-- project section -->
-      <section id="projects">
-        <div id="projectContainer">
-          <!-- project 1 -->
-          <div class="project">
-            <img src="/PersonalPortfolio/assets/state-project.png" alt="az state website">
-            <h3>State Website</h3>
-            <p>lorem imsum dumspm erie por here</p>
-          </div>
-          <!-- additional projects -->
-      </section>
-      <!-- certifcations and skills -->
-       <section id="skills">
-        <!-- cert cntainer -->
-        <div id="certContainer">
-          <!-- certs -->
-          <div class="cert">
-            <img src="/PersonalPortfolio/assets/cert.svg" alt="cert icon" class="w-10 h-10">
-            <p>CompTIA A+ | Network+ | Cloud+ | Security+</p>
-          </div>
-          <div class="cert">
-            <img src="/PersonalPortfolio/assets/linux.svg" alt="linux icon" class="w-10 h-10">
-            <p>LPI Linux Essentials</p>
-          </div>
-          <div class="cert">
-            <img src="/PersonalPortfolio/assets/azure.svg" alt="azure icon" class="w-10 h-10">
-            <p>Azure Fundamentals</p>
-        </div>
-        <!-- skill container -->
-         <div id="skillContainer">
-          <!-- skill -->
-           <div class="skill w-10 h-10"><img src="/PersonalPortfolio/assets/python.svg" alt="python icon"></div>
-           <div class="skill w-10 h-10"><img src="/PersonalPortfolio/assets/js.svg" alt="javascript icon"></div>
-           <div class="skill w-10 h-10"><img src="/PersonalPortfolio/assets/html.svg" alt="html5 icon"></div>
-           <div class="skill w-10 h-10"><img src="/PersonalPortfolio/assets/css.svg" alt="css3 icon"></div>
-           <div class="skill w-10 h-10"><img src="/PersonalPortfolio/assets/tailwind.svg" alt="tailwind icon"></div>
-         </div>
-       </section>
-       <!-- about me section -->
-        <section id="about">
-          <h2>A little bit about me...</h2>
-          <div id="aboutImages">
-            <img src="
-            
-            " alt="">
-          </div>
-        </section>
+<section id="projects" class="flex flex-col justify-center items-center space-y-10 py-12 bg-customLightBlue px-10 rounded-lg shadow-2xl">
+  <h2 class="text-4xl font-semibold text-customDarkBlue">Projects</h2>
+  <div id="projectContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
+    <!-- project 1 -->
+    <div class="project bg-white text-center p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+      <img src="/assets/state-project.png" alt="az state website" class="w-full h-48 object-cover rounded-t-lg">
+      <h3 class="text-2xl font-semibold mt-4">State Website</h3>
+      <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <!-- additional projects -->
+    <div class="project bg-white text-center p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+      <img src="/assets/project2.png" alt="project 2" class="w-full h-48 object-cotain rounded-t-lg">
+      <h3 class="text-2xl font-semibold mt-4">Project 2</h3>
+      <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="project bg-white text-center p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+      <img src="/assets/project3.png" alt="project 3" class="w-full h-48 object-cover rounded-t-lg">
+      <h3 class="text-2xl font-semibold mt-4">Project 3</h3>
+      <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+</section>
+      <!-- certifications and skills -->
+    <section id="skills" class="py-10 bg-customLightBlue rounded-lg shadow-2xl">
+    <h2 class="text-4xl font-semibold text-center text-customDarkBlue mb-10">Certifications & Skills</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-10">
+      <!-- Certification Card -->
+      <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center hover:shadow-xl transition-shadow">
+        <img src="/assets/cert.svg" alt="Cert Icon" class="w-16 h-16 mb-4">
+        <h3 class="text-xl font-semibold text-gray-700">CompTIA Certifications</h3>
+        <p class="text-gray-600 mt-2">A+, Network+, Cloud+, Security+</p>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center hover:shadow-xl transition-shadow">
+        <img src="/assets/linux.svg" alt="Linux Icon" class="w-16 h-16 mb-4">
+        <h3 class="text-xl font-semibold text-gray-700">Linux Essentials</h3>
+        <p class="text-gray-600 mt-2">Certified by LPI</p>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center hover:shadow-xl transition-shadow">
+        <img src="/assets/azure.svg" alt="Azure Icon" class="w-16 h-16 mb-4">
+        <h3 class="text-xl font-semibold text-gray-700">Azure Fundamentals</h3>
+        <p class="text-gray-600 mt-2">Certified by Microsoft</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- skills/programming langague -->
+   <section id="skills" class="py-10 bg-customLightBlue rounded-lg shadow-2xl">
+  <h2 class="text-4xl font-semibold text-center text-customDarkBlue mb-10">Technical Skills</h2>
+  <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-8 px-10 justify-center items-center">
+    <div class="flex flex-col items-center group">
+      <img src="/assets/python.svg" alt="Python" class="w-16 h-16 mb-2 group-hover:scale-110 transition-transform">
+      <p class="text-sm text-gray-600 group-hover:text-customRed">Python</p>
+    </div>
+    <div class="flex flex-col items-center group">
+      <img src="/assets/js.svg" alt="JavaScript" class="w-16 h-16 mb-2 group-hover:scale-110 transition-transform">
+      <p class="text-sm text-gray-600 group-hover:text-customRed">JavaScript</p>
+    </div>
+    <div class="flex flex-col items-center group">
+      <img src="/assets/html.svg" alt="HTML5" class="w-16 h-16 mb-2 group-hover:scale-110 transition-transform">
+      <p class="text-sm text-gray-600 group-hover:text-customRed">HTML5</p>
+    </div>
+    <div class="flex flex-col items-center group">
+      <img src="/assets/css.svg" alt="CSS3" class="w-16 h-16 mb-2 group-hover:scale-110 transition-transform">
+      <p class="text-sm text-gray-600 group-hover:text-customRed">CSS3</p>
+    </div>
+    <div class="flex flex-col items-center group">
+      <img src="/assets/tailwind.svg" alt="Tailwind CSS" class="w-16 h-16 mb-2 group-hover:scale-110 transition-transform">
+      <p class="text-sm text-gray-600 group-hover:text-customRed">Tailwind CSS</p>
+    </div>
+  </div>
+</section>
+
+
+      <!-- about me section -->
+      <section id="about">
+        <h2>A little bit about me...</h2>
+        <p>
+          I am a father, husband, Software Engineering student, and an active runner. I returned to school to gain expertise in a challenging and rewarding field, aiming to become a valuable contributor wherever my career takes me. I am currently enrolled in the Software Engineering program at Western Governors University, specializing in Java. Alongside my studies, I am actively building my front-end development skills and exploring frameworks like React to expand my capabilities.
+        </p>
+        <p>
+          Before transitioning into Software Engineering, I developed a diverse skill set through roles in customer service, retail management, and, more recently, network management. In the summer of 2024, I was honored to intern as a Technical Support Engineer at Ivanti, where I excelled at collaborating with cross-functional teams and enhancing the onboarding process for technical support engineers by refining documentation.
+        </p>
+        <p>
+          These experiences have equipped me with a unique combination of technical knowledge, problem-solving skills, and a commitment to teamwork, all of which I bring to my pursuit of becoming a strong and adaptable Software Engineer.
+        </p>
+        <div id="aboutImages">
+          <img src="/assets/marathon.jpg" alt="Description of the image">
+        </div>
+      </section>
+      <!-- contact section -->
+       <h2>Contact Me</h2>
+      <form id="contact" class="grid grid-cols-1">
+        <p>Send me a message!</p>
+        <label for="name">Your name?</label>
+        <input type="text" id="name" name="name" />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+        <button type="submit">Submit</button>
+      </form>
     </main>
+    <footer class=""><p>tristan tate</p></footer>
   </body>
 </html>
