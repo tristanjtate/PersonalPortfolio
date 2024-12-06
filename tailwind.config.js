@@ -24,6 +24,7 @@ module.exports = {
       animation: {
         pulsescale: "pulsescale 2s ease-in-out infinite", // 3 seconds per cycle
       },
+      darkMode: "class",
     },
   },
   plugins: [],

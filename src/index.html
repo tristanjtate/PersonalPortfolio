@@ -6,180 +6,163 @@
     <title>Tristan's Portfolio</title>
     <link rel="stylesheet" href="/src/output.css" />
     <!-- font -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
   </head>
-  <body class="font-parkinsans text-customDarkBlue space-y-20">
+  <body class="font-parkinsans text-customDarkBlue space-y-48">
     <!-- header section with logo, darkmode toggle and nav -->
- <header class="group flex justify-between items-center p-4 rounded-sm bg-customLightBlue shadow-lg px-14">
-  <!-- Logo -->
- <div class="relative flex items-center justify-center w-28 h-28 bg-gradient-to-b from-customLightBlue to-customDarkBlue rounded-full shadow-2xl animate-pulse duration-1000 ease-in-out">
-    <span class="absolute text-white text-5xl font-black">T</span>
-    <span class="absolute text-white text-5xl font-black opacity-50 translate-x-3 translate-y-2">T</span>
-  </div>
-  <!-- Navigation -->
-<nav class="group hidden md:flex space-x-6">
-  <ul class="flex space-x-6 group-hover:space-x-20 group-hover:transition-all duration-1000 text-lg">
-    <li class="group-hover:scale-150 group-hover:w-full transition-all duration-700 hover:scale-140 hover:font-semibold hover:ease-in-out hover:underline">
-      <a href="#about">About</a>
-    </li>
-    <li class="group-hover:scale-150 group-hover:w-full transition-all duration-700 hover:scale-140 hover:font-semibold hover:ease-in-out hover:underline">
-      <a href="#projects">Projects</a>
-    </li>
-    <li class="group-hover:scale-150 group-hover:w-full transition-all duration-700 hover:scale-140 hover:font-semibold hover:ease-in-out hover:underline">
-      <a href="#skills">Skills</a>
-    </li>
-    <li class="group-hover:scale-150 group-hover:w-full transition-all duration-700 hover:scale-140 hover:font-semibold hover:ease-in-out hover:underline">
-      <a href="#contact">Contact</a>
-    </li>
-  </ul>
-</nav>
+    <header class="group flex justify-between items-center p-4 rounded-sm bg-customLightBlue shadow-lg px-14">
+      <!-- Logo -->
+      <div class="relative flex items-center justify-center w-28 h-28 bg-gradient-to-b from-customLightBlue to-customDarkBlue rounded-full shadow-2xl animate-pulse duration-1000 ease-in-out">
+        <span class="absolute text-white text-5xl font-black">T</span>
+        <span class="absolute text-white text-5xl font-black opacity-50 translate-x-3 translate-y-2">T</span>
+      </div>
+      <!-- Navigation -->
+      <nav class="group hidden md:flex space-x-6">
+        <ul class="flex space-x-6 group-hover:space-x-20 group-hover:transition-all duration-1000 text-lg">
+          <li class="group-hover:scale-150 group-hover:w-full transition-all duration-700 hover:scale-140 hover:font-semibold hover:ease-in-out hover:underline">
+            <a href="#about">About</a>
+          </li>
+          <li class="group-hover:scale-150 group-hover:w-full transition-all duration-700 hover:scale-140 hover:font-semibold hover:ease-in-out hover:underline">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="group-hover:scale-150 group-hover:w-full transition-all duration-700 hover:scale-140 hover:font-semibold hover:ease-in-out hover:underline">
+            <a href="#skills">Skills</a>
+          </li>
+          <li class="group-hover:scale-150 group-hover:w-full transition-all duration-700 hover:scale-140 hover:font-semibold hover:ease-in-out hover:underline">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
 
-  <!-- Dark Mode Toggle -->
-  <button id="darkModeToggle" class="flex items-center space-x-2 group">
-    <img src="/assets/moon.svg" alt="Dark mode" class="size-12  group-hover:animate-pulsescale hidden dark:block " />
-    <img src="/assets/sun.svg" alt="Light mode" class="w-5 h-5 dark:hidden" />
-    <span class="text-sm text-gray-600 ">Toggle</span>
-  </button>
-</header>
-
+      <!-- Dark Mode Toggle
+      <button id="darkModeToggle" class="flex items-center space-x-2 group">
+        <img src="/assets/moon.svg" alt="Dark mode" class="size-12 hover:scale-125 group-hover:animate-pulsescale hidden" />
+        <img src="/assets/sun.svg" alt="Light mode" class="size-12" />
+        <span class="text-sm text-gray-600 hover:scale-110">Toggle</span>
+      </button> -->
+    </header>
 
     <!-- main content -->
     <main class="flex flex-col items-center justify-center min-h-screen space-y-48 pt-8">
       <!-- hero section -->
       <section id="hero" class="flex px-4 flex-col items-center space-y-10">
         <h1 class="text-4xl md:text-7xl">Tristan Tate</h1>
-        <p class="text-customRed font-semibold ">Software Engineer</p>
-        <p class="shadow-md px-4">Student <span class="text-customRed font-bold">|</span> Husband & Father <span class="text-customRed font-bold">|</span> Runner</p>
+        <p class="text-customRed font-semibold md:text-2xl">Software Engineer</p>
+        <p class="shadow-md px-4">Student <span class="text-customRed font-bold md:text-2xl">|</span> Husband & Father <span class="text-customRed font-bold">|</span> Runner</p>
         <!-- social links -->
         <div class="flex space-x-4">
-          <a href="https://github.com/tristanjtate"
-            ><img
-              src="/assets/github.png"
-              alt="github icon"
-              class="w-10 h-10"
-          /></a>
-          <a href="https://github.com/tristanjtate"
-            ><img
-              src="/assets/linkedin.png"
-              alt="linkedin icon"
-              class="w-10 h-10"
-          /></a>
-          </div>
-          <blockquote class="text-pretty text-center">
-            <p>
-              "Talent is a pursued interest. Anything that you're willing to
-              practice, you can do."
-            </p>
-            <p>-Bob Ross</p>
-          </blockquote>
+          <a href="https://github.com/tristanjtate"><img src="/assets/github.png" alt="github icon" class="w-10 h-10" /></a>
+          <a href="https://github.com/tristanjtate"><img src="/assets/linkedin.png" alt="linkedin icon" class="w-10 h-10" /></a>
         </div>
+        <blockquote class="text-pretty text-center">
+          <p>"Talent is a pursued interest. Anything that you're willing to practice, you can do."</p>
+          <p>-Bob Ross</p>
+        </blockquote>
       </section>
       <!-- project section -->
-<section id="projects" class="flex flex-col justify-center items-center space-y-10 py-12 bg-customLightBlue px-10 rounded-lg shadow-2xl">
-  <h2 class="text-4xl font-semibold text-customDarkBlue">Projects</h2>
-  <div id="projectContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
-    <!-- project 1 -->
-    <div class="project bg-white text-center p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
-      <img src="/assets/state-project.png" alt="az state website" class="w-full h-48 object-cover rounded-t-lg">
-      <h3 class="text-2xl font-semibold mt-4">State Website</h3>
-      <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-    <!-- additional projects -->
-    <div class="project bg-white text-center p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
-      <img src="/assets/project2.png" alt="project 2" class="w-full h-48 object-cotain rounded-t-lg">
-      <h3 class="text-2xl font-semibold mt-4">Project 2</h3>
-      <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-    <div class="project bg-white text-center p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
-      <img src="/assets/project3.png" alt="project 3" class="w-full h-48 object-cover rounded-t-lg">
-      <h3 class="text-2xl font-semibold mt-4">Project 3</h3>
-      <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </div>
-  </div>
-</section>
+      <section id="projects" class="flex flex-col justify-center items-center space-y-10 py-12 bg-customLightBlue px-10 rounded-lg shadow-2xl">
+        <h2 class="text-4xl font-semibold text-customDarkBlue">Projects</h2>
+        <div id="projectContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
+          <div class="project bg-white text-center p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+            <img src="/assets/state-project.png" alt="az state website" class="w-full h-48 object-cover rounded-t-lg">
+            <h3 class="text-2xl font-semibold mt-4">State Website</h3>
+            <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="project bg-white text-center p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+            <img src="/assets/project2.png" alt="project 2" class="w-full h-48 object-cotain rounded-t-lg">
+            <h3 class="text-2xl font-semibold mt-4">Project 2</h3>
+            <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="project bg-white text-center p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
+            <img src="/assets/project3.png" alt="project 3" class="w-full h-48 object-cover rounded-t-lg">
+            <h3 class="text-2xl font-semibold mt-4">Project 3</h3>
+            <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </section>
       <!-- certifications and skills -->
-    <section id="skills" class="py-10 bg-customLightBlue rounded-lg shadow-2xl">
-    <h2 class="text-4xl font-semibold text-center text-customDarkBlue mb-10">Certifications & Skills</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-10">
-      <!-- Certification Card -->
-      <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center hover:shadow-xl transition-shadow">
-        <img src="/assets/cert.svg" alt="Cert Icon" class="w-16 h-16 mb-4">
-        <h3 class="text-xl font-semibold text-gray-700">CompTIA Certifications</h3>
-        <p class="text-gray-600 mt-2">A+, Network+, Cloud+, Security+</p>
-      </div>
-      <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center hover:shadow-xl transition-shadow">
-        <img src="/assets/linux.svg" alt="Linux Icon" class="w-16 h-16 mb-4">
-        <h3 class="text-xl font-semibold text-gray-700">Linux Essentials</h3>
-        <p class="text-gray-600 mt-2">Certified by LPI</p>
-      </div>
-      <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center hover:shadow-xl transition-shadow">
-        <img src="/assets/azure.svg" alt="Azure Icon" class="w-16 h-16 mb-4">
-        <h3 class="text-xl font-semibold text-gray-700">Azure Fundamentals</h3>
-        <p class="text-gray-600 mt-2">Certified by Microsoft</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- skills/programming langague -->
-   <section id="skills" class="py-10 bg-customLightBlue rounded-lg shadow-2xl">
-  <h2 class="text-4xl font-semibold text-center text-customDarkBlue mb-10">Technical Skills</h2>
-  <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-8 px-10 justify-center items-center">
-    <div class="flex flex-col items-center group">
-      <img src="/assets/python.svg" alt="Python" class="w-16 h-16 mb-2 group-hover:scale-110 transition-transform">
-      <p class="text-sm text-gray-600 group-hover:text-customRed">Python</p>
-    </div>
-    <div class="flex flex-col items-center group">
-      <img src="/assets/js.svg" alt="JavaScript" class="w-16 h-16 mb-2 group-hover:scale-110 transition-transform">
-      <p class="text-sm text-gray-600 group-hover:text-customRed">JavaScript</p>
-    </div>
-    <div class="flex flex-col items-center group">
-      <img src="/assets/html.svg" alt="HTML5" class="w-16 h-16 mb-2 group-hover:scale-110 transition-transform">
-      <p class="text-sm text-gray-600 group-hover:text-customRed">HTML5</p>
-    </div>
-    <div class="flex flex-col items-center group">
-      <img src="/assets/css.svg" alt="CSS3" class="w-16 h-16 mb-2 group-hover:scale-110 transition-transform">
-      <p class="text-sm text-gray-600 group-hover:text-customRed">CSS3</p>
-    </div>
-    <div class="flex flex-col items-center group">
-      <img src="/assets/tailwind.svg" alt="Tailwind CSS" class="w-16 h-16 mb-2 group-hover:scale-110 transition-transform">
-      <p class="text-sm text-gray-600 group-hover:text-customRed">Tailwind CSS</p>
-    </div>
-  </div>
-</section>
-
-
+      <section id="skills" class="py-10 bg-customLightBlue rounded-lg shadow-2xl">
+        <h2 class="text-4xl font-semibold text-center text-customDarkBlue mb-10">Certifications & Skills</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-10">
+          <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center hover:shadow-xl transition-shadow">
+            <img src="/assets/cert.svg" alt="Cert Icon" class="w-16 h-16 mb-4">
+            <h3 class="text-xl font-semibold text-gray-700">CompTIA Certifications</h3>
+            <p class="text-gray-600 mt-2">A+, Network+, Cloud+, Security+</p>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center hover:shadow-xl transition-shadow">
+            <img src="/assets/linux.svg" alt="Linux Icon" class="w-16 h-16 mb-4">
+            <h3 class="text-xl font-semibold text-gray-700">Linux Essentials</h3>
+            <p class="text-gray-600 mt-2">Certified by LPI</p>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center hover:shadow-xl transition-shadow">
+            <img src="/assets/azure.svg" alt="Azure Icon" class="w-16 h-16 mb-4">
+            <h3 class="text-xl font-semibold text-gray-700">Azure Fundamentals</h3>
+            <p class="text-gray-600 mt-2">Certified by Microsoft</p>
+          </div>
+        </div>
+      </section>
+      <!-- skills/programming langague -->
+      <section id="skills" class="py-10 bg-customLightBlue rounded-lg shadow-2xl">
+        <h2 class="text-4xl font-semibold text-center text-customDarkBlue mb-10">Technical Skills</h2>
+        <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-8 px-10 justify-center items-center">
+          <div class="flex flex-col items-center group">
+            <img src="/assets/python.svg" alt="Python" class="w-16 h-16 mb-2 group-hover:scale-110 transition-transform">
+            <p class="text-sm text-gray-600 group-hover:text-customRed">Python</p>
+          </div>
+          <div class="flex flex-col items-center group">
+            <img src="/assets/js.svg" alt="JavaScript" class="w-16 h-16 mb-2 group-hover:scale-110 transition-transform">
+            <p class="text-sm text-gray-600 group-hover:text-customRed">JavaScript</p>
+          </div>
+          <div class="flex flex-col items-center group">
+            <img src="/assets/html.svg" alt="HTML5" class="w-16 h-16 mb-2 group-hover:scale-110 transition-transform">
+            <p class="text-sm text-gray-600 group-hover:text-customRed">HTML5</p>
+          </div>
+          <div class="flex flex-col items-center group">
+            <img src="/assets/css.svg" alt="CSS3" class="w-16 h-16 mb-2 group-hover:scale-110 transition-transform">
+            <p class="text-sm text-gray-600 group-hover:text-customRed">CSS3</p>
+          </div>
+          <div class="flex flex-col items-center group">
+            <img src="/assets/tailwind.svg" alt="Tailwind CSS" class="w-16 h-16 mb-2 group-hover:scale-110 transition-transform">
+            <p class="text-sm text-gray-600 group-hover:text-customRed">Tailwind CSS</p>
+          </div>
+        </div>
+      </section>
       <!-- about me section -->
-      <section id="about">
-        <h2>A little bit about me...</h2>
-        <p>
-          I am a father, husband, Software Engineering student, and an active runner. I returned to school to gain expertise in a challenging and rewarding field, aiming to become a valuable contributor wherever my career takes me. I am currently enrolled in the Software Engineering program at Western Governors University, specializing in Java. Alongside my studies, I am actively building my front-end development skills and exploring frameworks like React to expand my capabilities.
-        </p>
-        <p>
-          Before transitioning into Software Engineering, I developed a diverse skill set through roles in customer service, retail management, and, more recently, network management. In the summer of 2024, I was honored to intern as a Technical Support Engineer at Ivanti, where I excelled at collaborating with cross-functional teams and enhancing the onboarding process for technical support engineers by refining documentation.
-        </p>
-        <p>
-          These experiences have equipped me with a unique combination of technical knowledge, problem-solving skills, and a commitment to teamwork, all of which I bring to my pursuit of becoming a strong and adaptable Software Engineer.
-        </p>
-        <div id="aboutImages">
-          <img src="/assets/marathon.jpg" alt="Description of the image">
+      <section id="about" class="py-10 bg-customLightBlue rounded-lg shadow-2xl flex flex-col space-y-6 items-center justify-center text-center px-2 md:px-12">
+        <h2 class="text-4xl font-semibold text-customDarkBlue mb-12">A little bit about me...</h2>
+        <div class="md:max-w-3xl sm:max-w-xl text-lg leading-relaxed text-gray-800 space-y-8">
+          <p>
+            I am a father, husband, Software Engineering student, and an active runner. I returned to school to gain expertise in a challenging and rewarding field, aiming to become a valuable contributor wherever my career takes me. I am currently enrolled in the Software Engineering program at Western Governors University, specializing in Java. Alongside my studies, I am actively building my front-end development skills and exploring frameworks like React to expand my capabilities.
+          </p>
+          <p>
+            Before transitioning into Software Engineering, I developed a diverse skill set through roles in customer service, retail management, and, more recently, network management. In the summer of 2024, I was honored to intern as a Technical Support Engineer at Ivanti, where I excelled at collaborating with cross-functional teams and enhancing the onboarding process for technical support engineers by refining documentation.
+          </p>
+          <p>
+            These experiences have equipped me with a unique combination of technical knowledge, problem-solving skills, and a commitment to teamwork, all of which I bring to my pursuit of becoming a strong and adaptable Software Engineer.
+          </p>
+        </div>
+        <div id="aboutImages" class="w-full flex flex-col max-w-md mx-auto mt-6">
+          <img src="/assets/marathon.jpg" alt="Description of the image" class="w-full h-auto object-cover rounded-lg shadow-md">
         </div>
       </section>
       <!-- contact section -->
-       <h2>Contact Me</h2>
-      <form id="contact" class="grid grid-cols-1">
-        <p>Send me a message!</p>
-        <label for="name">Your name?</label>
-        <input type="text" id="name" name="name" />
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" />
-        <label for="message">Message</label>
-        <textarea id="message" name="message"></textarea>
-        <button type="submit">Submit</button>
-      </form>
+      <div class="py-20 bg-customLightBlue rounded-lg shadow-2xl flex flex-col space-y-8 items-center justify-center text-center px-6 md:px-20 md:py-24">
+        <h2 class="text-4xl font-semibold text-customDarkBlue mb-12">Contact Me</h2>
+        <form id="contact" class="grid grid-cols-1 gap-4 w-full min-w-[20rem] md:w-[36rem] lg:w-[48rem]">
+          <p class="text-lg text-gray-800 font-bold">Thanks for stopping by!</p>
+          <label for="name" class="text-left text-gray-700">Your name?</label>
+          <input type="text" id="name" name="name" class="p-4 border border-gray-300 rounded-md" required />
+          <label for="email" class="text-left text-gray-700">Email</label>
+          <input type="email" id="email" name="email" class="p-4 border border-gray-300 rounded-md" required />
+          <label for="message" class="text-left text-gray-700">Message</label>
+          <textarea id="message" name="message" class="p-4 border border-gray-300 rounded-md h-32 md:h-40" required></textarea>
+          <button type="submit" class="py-3 px-6 bg-customDarkBlue text-white rounded-md hover:bg-customRed transition-colors">Submit</button>
+        </form>
+      </div>
     </main>
-    <footer class=""><p>tristan tate</p></footer>
+    <footer class="text-center text-customDarkBlue"><p>© 2024 Tristan Tate. All rights reserved.</p></footer>
   </body>
 </html>
