@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tristan's Portfolio</title>
-    <link rel="stylesheet" href="/src/output.css" />
+    <link rel="stylesheet" href="
+    output.css" />
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,8 +55,8 @@
         <p class="shadow-md px-4">Student <span class="text-customRed font-bold md:text-2xl">|</span> Husband & Father <span class="text-customRed font-bold">|</span> Runner</p>
         <!-- social links -->
         <div class="flex space-x-4">
-          <a href="https://github.com/tristanjtate"><img src="/assets/github.png" alt="github icon" class="w-10 h-10" /></a>
-          <a href="https://github.com/tristanjtate"><img src="/assets/linkedin.png" alt="linkedin icon" class="w-10 h-10" /></a>
+          <a href="https://github.com/tristanjtate"><img src="assets/github.png" alt="github icon" class="w-10 h-10 hover:animate-pulsescale" /></a>
+          <a href="https://www.linkedin.com/in/tristantate/"><img src="assets/linkedin.png" alt="linkedin icon" class="w-10 h-10 hover:animate-pulsescale" /></a>
         </div>
         <blockquote class="text-pretty text-center">
           <p>"Talent is a pursued interest. Anything that you're willing to practice, you can do."</p>
@@ -67,38 +68,42 @@
         <h2 class="text-4xl font-semibold text-customDarkBlue">Projects</h2>
         <div id="projectContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
           <div class="project bg-white text-center p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
-            <img src="/assets/state-project.png" alt="az state website" class="w-full h-48 object-cover rounded-t-lg">
+            <a href="https://tristanjtate.github.io/stateWebsite/"><img src="assets/state-project.png" alt="az state website" class="w-full h-48 object-cover rounded-t-lg"></a>
             <h3 class="text-2xl font-semibold mt-4">State Website</h3>
-            <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <ul class="text-gray-600 mt-2 list-disc marker:text-customTeal pl-5 text-left">
+
+              <li >Static, Responsive and fun site using HTML, CSS and JS.</li>
+              <li>Client-side validation for form input, and utilized sessionStorage to temporarily store and manage user input.</li>
+            </ul>
           </div>
           <div class="project bg-white text-center p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
-            <img src="/assets/project2.png" alt="project 2" class="w-full h-48 object-cotain rounded-t-lg">
-            <h3 class="text-2xl font-semibold mt-4">Project 2</h3>
-            <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <!-- <img src="/assets/project2.png" alt="project 2" class="w-full h-48 object-cotain rounded-t-lg"> -->
+            <h3 class="text-2xl font-semibold mt-4">More Projects Coming Soon!</h3>
+            <p class="text-gray-600 mt-2"></p>
           </div>
           <div class="project bg-white text-center p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
-            <img src="/assets/project3.png" alt="project 3" class="w-full h-48 object-cover rounded-t-lg">
-            <h3 class="text-2xl font-semibold mt-4">Project 3</h3>
-            <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <!-- <img src="/assets/project3.png" alt="project 3" class="w-full h-48 object-cover rounded-t-lg"> -->
+            <h3 class="text-2xl font-semibold mt-4">Yeah, what the other one said.</h3>
+            <p class="text-gray-600 mt-2"></p>
           </div>
         </div>
       </section>
       <!-- certifications and skills -->
-      <section id="skills" class="py-10 bg-customLightBlue rounded-lg shadow-2xl">
+      <section id="skills" class="py-10 bg-customLightBlue rounded-lg shadow-2xl px-14">
         <h2 class="text-4xl font-semibold text-center text-customDarkBlue mb-10">Certifications & Skills</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-10">
           <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center hover:shadow-xl transition-shadow">
-            <img src="/assets/cert.svg" alt="Cert Icon" class="w-16 h-16 mb-4">
+            <img src="assets/cert.svg" alt="Cert Icon" class="w-16 h-16 mb-4">
             <h3 class="text-xl font-semibold text-gray-700">CompTIA Certifications</h3>
             <p class="text-gray-600 mt-2">A+, Network+, Cloud+, Security+</p>
           </div>
           <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center hover:shadow-xl transition-shadow">
-            <img src="/assets/linux.svg" alt="Linux Icon" class="w-16 h-16 mb-4">
+            <img src="assets/linux.svg" alt="Linux Icon" class="w-16 h-16 mb-4">
             <h3 class="text-xl font-semibold text-gray-700">Linux Essentials</h3>
             <p class="text-gray-600 mt-2">Certified by LPI</p>
           </div>
           <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center hover:shadow-xl transition-shadow">
-            <img src="/assets/azure.svg" alt="Azure Icon" class="w-16 h-16 mb-4">
+            <img src="assets/azure.svg" alt="Azure Icon" class="w-16 h-16 mb-4">
             <h3 class="text-xl font-semibold text-gray-700">Azure Fundamentals</h3>
             <p class="text-gray-600 mt-2">Certified by Microsoft</p>
           </div>
@@ -109,23 +114,23 @@
         <h2 class="text-4xl font-semibold text-center text-customDarkBlue mb-10">Technical Skills</h2>
         <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-8 px-10 justify-center items-center">
           <div class="flex flex-col items-center group">
-            <img src="/assets/python.svg" alt="Python" class="w-16 h-16 mb-2 group-hover:scale-110 transition-transform">
+            <img src="assets/python.svg" alt="Python" class="w-16 h-16 mb-2 group-hover:scale-110 transition-transform">
             <p class="text-sm text-gray-600 group-hover:text-customRed">Python</p>
           </div>
           <div class="flex flex-col items-center group">
-            <img src="/assets/js.svg" alt="JavaScript" class="w-16 h-16 mb-2 group-hover:scale-110 transition-transform">
+            <img src="assets/js.svg" alt="JavaScript" class="w-16 h-16 mb-2 group-hover:scale-110 transition-transform">
             <p class="text-sm text-gray-600 group-hover:text-customRed">JavaScript</p>
           </div>
           <div class="flex flex-col items-center group">
-            <img src="/assets/html.svg" alt="HTML5" class="w-16 h-16 mb-2 group-hover:scale-110 transition-transform">
+            <img src="assets/html.svg" alt="HTML5" class="w-16 h-16 mb-2 group-hover:scale-110 transition-transform">
             <p class="text-sm text-gray-600 group-hover:text-customRed">HTML5</p>
           </div>
           <div class="flex flex-col items-center group">
-            <img src="/assets/css.svg" alt="CSS3" class="w-16 h-16 mb-2 group-hover:scale-110 transition-transform">
+            <img src="assets/css.svg" alt="CSS3" class="w-16 h-16 mb-2 group-hover:scale-110 transition-transform">
             <p class="text-sm text-gray-600 group-hover:text-customRed">CSS3</p>
           </div>
           <div class="flex flex-col items-center group">
-            <img src="/assets/tailwind.svg" alt="Tailwind CSS" class="w-16 h-16 mb-2 group-hover:scale-110 transition-transform">
+            <img src="assets/tailwind.svg" alt="Tailwind CSS" class="w-16 h-16 mb-2 group-hover:scale-110 transition-transform">
             <p class="text-sm text-gray-600 group-hover:text-customRed">Tailwind CSS</p>
           </div>
         </div>
@@ -145,13 +150,21 @@
           </p>
         </div>
         <div id="aboutImages" class="w-full flex flex-col max-w-md mx-auto mt-6">
-          <img src="/assets/marathon.jpg" alt="Description of the image" class="w-full h-auto object-cover rounded-lg shadow-md">
+          <img src="assets/marathon.jpg" alt="Description of the image" class="w-full h-auto object-cover rounded-lg shadow-md">
         </div>
       </section>
       <!-- contact section -->
       <div class="py-20 bg-customLightBlue rounded-lg shadow-2xl flex flex-col space-y-8 items-center justify-center text-center px-6 md:px-20 md:py-24">
+        
         <h2 class="text-4xl font-semibold text-customDarkBlue mb-12">Contact Me</h2>
-        <form id="contact" class="grid grid-cols-1 gap-4 w-full min-w-[20rem] md:w-[36rem] lg:w-[48rem]">
+        <!-- temporary message -->
+        <h3 class="text-red-700 font-semibold">Currently, Contact Form is not working. I am actively learning how to utilize Flask for the backend. Please feel free to contact me via Social Links!</h3>
+        <div class="flex space-x-4">
+          <a href="https://github.com/tristanjtate"><img src="assets/github.png" alt="github icon" class="w-10 h-10 hover:animate-pulsescale" /></a>
+          <a href="https://www.linkedin.com/in/tristantate/"><img src="assets/linkedin.png" alt="linkedin icon" class="w-10 h-10 hover:animate-pulsescale" /></a>
+        </div>
+        <!-- temp msg ends -->
+        <form action="/send" method="post" id="contact" class="grid grid-cols-1 gap-4 w-full min-w-[20rem] md:w-[36rem] lg:w-[48rem]">
           <p class="text-lg text-gray-800 font-bold">Thanks for stopping by!</p>
           <label for="name" class="text-left text-gray-700">Your name?</label>
           <input type="text" id="name" name="name" class="p-4 border border-gray-300 rounded-md" required />
