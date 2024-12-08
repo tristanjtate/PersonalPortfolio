@@ -8,7 +8,7 @@ load_dotenv('vars.env')
 print("DEBUG:", os.environ.get("EMAIL_USER"), os.environ.get("EMAIL_PASSWORD"), os.environ.get("RECEIVER_EMAIL"))
 
 
-app = Flask(__name__, static_folder='src', static_url_path='')
+app = Flask(__name__, static_folder='docs', static_url_path='')
 
 @app.route('/')
 def serve_index():
