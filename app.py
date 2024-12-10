@@ -10,6 +10,11 @@ print("DEBUG:", os.environ.get("EMAIL_USER"), os.environ.get("EMAIL_PASSWORD"), 
 
 app = Flask(__name__, static_folder='docs', static_url_path='')
 
+# a health check that was recommended so IM ADDING IT ;]
+@app.route('/healthz')
+def health_check():
+    return "OK", 200  # Render expects a 200 response to verify the service is healthy
+
 @app.route('/')
 def serve_index():
     return app.send_static_file('index.html')
