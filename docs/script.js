@@ -14,7 +14,7 @@ form.addEventListener('submit', function (e) {
 const formData = new FormData(form);
 
 // send data using fetch to backend URL
-fetch('https://personalportfolio-l61v.onrender.com', {
+fetch('https://personalportfolio-l61v.onrender.com/send', {
     method: 'POST',
     body: formData
 })

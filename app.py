@@ -2,13 +2,18 @@ from flask import Flask, request
 from dotenv import load_dotenv
 import os
 import smtplib, ssl
+from flask_cors import CORS
 
 # Load environment variables
 load_dotenv('vars.env')
-print("DEBUG:", os.environ.get("EMAIL_USER"), os.environ.get("EMAIL_PASSWORD"), os.environ.get("RECEIVER_EMAIL"))
+# print("DEBUG:", os.environ.get("EMAIL_USER"), os.environ.get("EMAIL_PASSWORD"), os.environ.get("RECEIVER_EMAIL"))
 
 
 app = Flask(__name__, static_folder='docs', static_url_path='')
+
+# Enable CORS
+CORS(app)
+
 
 # a health check that was recommended so IM ADDING IT ;]
 @app.route('/healthz')
