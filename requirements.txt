@@ -1,0 +1,10 @@
+blinker==1.9.0            # Optional: Flask signals support (auto-installed by Flask)
+click==8.1.7              # Optional: CLI for Flask commands (auto-installed by Flask)
+colorama==0.4.6           # Optional: Colored terminal output (helpful for Windows)
+Flask==3.1.0              # Main framework
+itsdangerous==2.2.0       # Secure signing for sessions/tokens (auto-installed by Flask)
+Jinja2==3.1.4             # Templating engine (auto-installed by Flask)
+MarkupSafe==3.0.2         # Safe rendering of HTML/XML (auto-installed by Flask)
+python-dotenv==1.0.1      # For managing `.env` files
+Werkzeug==3.1.3           # Routing, debugging, etc. (auto-installed by Flask)
+gunicorn==20.1.0          # WSGI server for production (must be added manually)

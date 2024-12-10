@@ -164,7 +164,7 @@
           <a href="https://www.linkedin.com/in/tristantate/"><img src="assets/linkedin.png" alt="linkedin icon" class="w-10 h-10 hover:animate-pulsescale" /></a>
         </div>
         <!-- temp msg ends -->
-        <form action="/send" method="post" id="contact" class="grid grid-cols-1 gap-4 w-full min-w-[20rem] md:w-[36rem] lg:w-[48rem]">
+        <form  id="contactForm" class="grid grid-cols-1 gap-4 w-full min-w-[20rem] md:w-[36rem] lg:w-[48rem]">
           <p class="text-lg text-gray-800 font-bold">Thanks for stopping by!</p>
           <label for="name" class="text-left text-gray-700">Your name?</label>
           <input type="text" id="name" name="name" class="p-4 border border-gray-300 rounded-md" required />
@@ -174,6 +174,8 @@
           <textarea id="message" name="message" class="p-4 border border-gray-300 rounded-md h-32 md:h-40" required></textarea>
           <button type="submit" class="py-3 px-6 bg-customDarkBlue text-white rounded-md hover:bg-customRed transition-colors">Submit</button>
         </form>
+        <!-- response after form is submitted -->
+         <div id="responseMessage" style="display: none; color:green"></div>
       </div>
     </main>
     <footer class="text-center text-customDarkBlue"><p>© 2024 Tristan Tate. All rights reserved.</p></footer>
