@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
           responseMessage2.style.display = "block";
           responseMessage2.textContent =
             "Thank you for reaching out! I will get back to you shortly.";
-        //   responseMessage2.style.color = "green"; // Set success color
+     
         }
 
         form.reset(); // Clear the form
